@@ -14,12 +14,12 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-[#b8965a] mb-8 font-light italic">
             {clinicData.doctorTitle}
           </p>
-          <a
-            href={`tel:${clinicData.phone}`}
+          <Link
+            to="/booking"
             className="bg-[#b8965a] hover:bg-[#a1824d] text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-block shadow-lg"
           >
             احجز موعدك الآن
-          </a>
+          </Link>
         </div>
       </section>
 

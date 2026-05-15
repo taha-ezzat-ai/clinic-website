@@ -21,6 +21,7 @@ export default function Navbar() {
           <li><Link to="/results">النتائج</Link></li>
           <li><Link to="/about">عن الدكتور</Link></li>
           <li><Link to="/contact">تواصل معنا</Link></li>
+          <li><Link to="/booking" className="bg-primary text-white px-3 py-1 rounded">حجز موعد</Link></li>
         </ul>
 
         {/* زر الموبايل ☰ */}
@@ -37,6 +38,7 @@ export default function Navbar() {
           <Link to="/results" onClick={() => setMenuOpen(false)}>النتائج</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>عن الدكتور</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>تواصل معنا</Link>
+          <Link to="/booking" onClick={() => setMenuOpen(false)} className="text-primary font-bold">حجز موعد</Link>
         </div>
       )}
     </nav>
