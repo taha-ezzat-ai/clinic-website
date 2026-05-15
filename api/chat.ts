@@ -26,8 +26,7 @@ export default async function handler(req: any, res: any) {
     // المحاولة الثانية: Groq / Llama 3 (المحرك الاحتياطي الفوري)
     try {
       // نستخدم مفتاح Groq الموجود في المشروع
-      const groq = new Groq({ apiKey: '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' });
-      
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });      
       const chatCompletion = await groq.chat.completions.create({
         messages: [
           { role: 'system', content: SYSTEM_INSTRUCTION },
